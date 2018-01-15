@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>COSC3307 Robot (Tree)</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="500" height="500">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+		<script src="../lib/cuon-matrix-Shear.js"></script>
+    <script src="backhoeSC.js"></script>
+    <script src="TreeforBackhoe.js"></script>
+  </body>
+     <form id='formSliders'>
+        <b>wheel &theta;z:  </b>
+		<input id='thetazSliderwheel' type="range" name="thetazwheel" min="0" max="360" step='1' value="0">
+		<b>Front scooper &theta;z:  </b>
+		<input id='thetazSliderFrontScooper' type="range" name="thetazScoop" min="0" max="60" step='1' value="0">
+		<b>body y:  
+		<input id='xSliderBody' type="range" name="xBody" min="0" max="360" step='1' value="0">
+		</b>
+		<br>
+		<b> front connector &theta;z:</b>		
+		<input id='thetazSliderRfc' type="range" name="thetazRfC" min="-45" max="0" step='1' value="0">
+		<b>Back 1 &theta;z:</b>		
+		<input id='thetazSliderBack' type="range" name="thetazBack1" min="-20" max="0" step='1' value="0">
+		<b>Back scooper &theta;z:</b>		
+		<input id='thetaxSliderBackscooper' type="range" name="thetazBackscooper" min="-60" max="0" step='1' value="0">
+		<br>
+		<b>Back2 &theta;z:</b>		
+		<input id='thetaxSliderBack2' type="range" name="thetaxBack2" min="-15" max="0" step='1' value="0">
+		
+	
+		<br>
+	</form> 
+    <p><button id="resetButton">Reset</button></p>  
+</html>
